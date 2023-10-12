@@ -57,10 +57,7 @@ export default async function RestaurantDetails({
 
   return (
     <>
-      <RestaurantHeader
-        location={restaurant?.location}
-        name={restaurant?.name}
-      />
+      <RestaurantHeader location={restaurant.location} name={restaurant.name} />
       <div className="flex m-auto w-2/3 justify-between items-start 0 -mt-11">
         <div className="bg-slate-100 w-[70%] rounded px-10 py-5 shadow">
           <RestaurantNavBar slug={restaurant.slug} />
