@@ -67,17 +67,14 @@ const useAuth = () => {
       loading: true,
     });
     try {
-      const response = await axios.post(
-        "http://localhost:3000/api/auth/signup",
-        {
-          email,
-          password,
-          firstName,
-          lastName,
-          city,
-          phone,
-        }
-      );
+      const response = await axios.post("/api/auth/signup", {
+        email,
+        password,
+        firstName,
+        lastName,
+        city,
+        phone,
+      });
       setAuthState({
         data: response.data,
         error: null,
