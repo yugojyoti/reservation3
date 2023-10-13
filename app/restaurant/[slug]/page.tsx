@@ -8,8 +8,8 @@ import RestaurantNavBar from "./components/RestaurantNavBar";
 import Reviews from "./components/Reviews";
 import Title from "./components/Title";
 import RestaurantHeader from "./components/RestaurantHeader";
-
-const prisma = new PrismaClient();
+import prisma from "../../db";
+// const prisma = new PrismaClient();
 
 interface Restaurant {
   id: number;

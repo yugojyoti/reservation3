@@ -127,7 +127,7 @@ export default function SignupModal() {
                       className="border-2 px-4 py-2 border-black  w-full"
                       placeholder="First Name"
                       value={user.firstName}
-                      name="firstname"
+                      name="firstName"
                       type="text"
                       onChange={handleChange}
                     />
@@ -136,7 +136,7 @@ export default function SignupModal() {
                     <input
                       className="border-2 px-4 py-2 border-black w-full"
                       placeholder="Last Name"
-                      name="lastname"
+                      name="lastName"
                       type="text"
                       value={user.lastName}
                       onChange={handleChange}

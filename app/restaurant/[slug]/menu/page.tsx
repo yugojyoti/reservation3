@@ -3,7 +3,8 @@ import Menu from "../components/Menu";
 import RestaurantNavBar from "../components/RestaurantNavBar";
 import RestaurantHeader from "../components/RestaurantHeader";
 import Link from "next/link";
-const prisma = new PrismaClient();
+import prisma from "../../../db";
+// const prisma = new PrismaClient();
 
 const fetchRestaurantMenu = async (slug: string) => {
   try {

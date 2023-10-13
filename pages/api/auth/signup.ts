@@ -34,17 +34,10 @@ export default async function handler(
         valid: validator.isEmail(email),
         errorMessage: "Email is invalid",
       },
-      {
-        valid: validator.isMobilePhone(phone),
-        errorMessage: "Phone number is invalid",
-      },
+
       {
         valid: validator.isLength(city, { min: 1 }),
         errorMessage: "City is invalid",
-      },
-      {
-        valid: validator.isStrongPassword(password),
-        errorMessage: "Password is not strong enough",
       },
     ];
 

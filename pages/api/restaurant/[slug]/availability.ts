@@ -2,8 +2,8 @@ import { PrismaClient } from "@prisma/client";
 import { NextApiRequest, NextApiResponse } from "next";
 import { times } from "../../../../data";
 import { findAvailabileTables } from "../../../../services/restaurant/findAvailableTables";
-
-const prisma = new PrismaClient();
+import prisma from "../../../../app/db";
+// const prisma = new PrismaClient();
 
 export default async function handler(
   req: NextApiRequest,
